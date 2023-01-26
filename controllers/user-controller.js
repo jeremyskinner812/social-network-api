@@ -13,16 +13,16 @@ const userController = {
 
     getSingleUser(req, res) {
         User.findOne({ _id: req.params.userId })
-            .select('-__v')
-            .populate('friends')
-            .populate('thoughts')
+            // .select('-__v')
+            // .populate('friends')
+            // .populate('thoughts')
             .then((dbUserData) => {
                 if (!dbUserData) {
                     return res.status(404);
                 }
                 res.json(dbUserData)
             })
-            .catch((error) => res.status(500).json(err));
+            .catch((err) => res.status(500).json(err));
     },
 
     createUser(req, res) {
@@ -62,7 +62,7 @@ const userController = {
                 }
                 res.json(dbUserData);
             })
-            catch((err) => res.status.json(err));
+            .catch((err) => res.status.json(err));
     },
 
     removeFriend(req, res) {
@@ -73,7 +73,7 @@ const userController = {
                 }
                 res.json(dbUserData);
             })
-            catch((err) => res.status.json(err));
+            .catch((err) => res.status.json(err));
     },
 
 
