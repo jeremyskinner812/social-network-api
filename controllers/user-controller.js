@@ -62,7 +62,7 @@ const userController = {
                 }
                 res.json(dbUserData);
             })
-            .catch((err) => res.status.json(err));
+            .catch((err) => res.status(500).json(err));
     },
 
     removeFriend(req, res) {
@@ -73,7 +73,7 @@ const userController = {
                 }
                 res.json(dbUserData);
             })
-            .catch((err) => res.status.json(err));
+            .catch((err) => res.status(500).json(err));
     },
 
 
