@@ -17,7 +17,7 @@ To install run npm install and npm start
 
 ## Usage
 
-To use run npm start after installing all dependencies. You can test the API's endpoints with a tool like postman or insomnia. The API endpoints can be found in the api folder in the routes folder. Attached is a video demo of all the endpoints and CRUD operations. ![DEMO](https://drive.google.com/file/d/1nlt9xey3X9VzZhhGhD-eQG-VsfIt7mUF/view?usp=sharing)
+To use run npm start after installing all dependencies. You can test the API's endpoints with a tool like postman or insomnia. The API endpoints can be found in the api folder in the routes folder. Attached is a video demo of all the endpoints and CRUD operations. [DEMO](https://drive.google.com/file/d/1nlt9xey3X9VzZhhGhD-eQG-VsfIt7mUF/view?usp=sharing)
 
 
 ## Credits
